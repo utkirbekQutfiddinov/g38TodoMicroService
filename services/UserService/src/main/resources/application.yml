@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: UserService
+  liquibase:
+    enabled: true
+    change-log: db/migration/liquibase/masterchangelog.yml
+  flyway:
+    enabled: false
+    locations: classpath:db/migration
+  datasource:
+    url: jdbc:postgresql://localhost:5432/g38?currentSchema=flyway
+    username: postgres
+    password: 1223
+
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8000/eureka
+
+  instance:
+    hostname: localhost
+    id: user-service
+    ip-address: localhost
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+
+server:
+  port: 8080
+
+
+
+

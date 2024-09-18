@@ -1,0 +1,14 @@
+spring:
+  application:
+   name: EurekaServer
+server:
+  port: 8000
+eureka:
+  instance:
+    id: ${spring.application.name}
+    instance-id: eureka-server
+    ip-address: 127.0.0.1
+    prefer-ip-address: true
+    hostname: localhost
+  client:
+    register-with-eureka: false

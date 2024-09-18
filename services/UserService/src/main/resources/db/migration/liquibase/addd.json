@@ -1,0 +1,25 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "2",
+        "author": "pdp",
+        "changes": [
+          {
+            "addColumn": {
+              "tableName": "users",
+              "columns": [
+                {
+                  "column": {
+                    "name": "password",
+                    "type": "varchar(8)"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

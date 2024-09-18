@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: utkirbek
+      comment: test uchun migration
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - name: name
+                value: 'g38'
+  - changeSet:
+      id: 2
+      author: admin
+      comment: test uchun migration 2
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - name: name
+                value: 'g39'

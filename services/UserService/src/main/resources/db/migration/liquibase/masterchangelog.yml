@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - include:
+     file: classpath:/db/migration/liquibase/changelog.sql
+  - include:
+     file: classpath:/db/migration/liquibase/insert_data.yml
+  - include:
+     file: classpath:/db/migration/liquibase/addd.json
+  - include:
+      file: classpath:/db/migration/liquibase/insert.xml
